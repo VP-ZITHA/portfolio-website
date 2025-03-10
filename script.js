@@ -12,11 +12,11 @@ buttons.forEach(button => {
         
         // Hide all sections and intro background
         allSections.forEach(s => {
-            s.classList.add('hidden');
+            s.style.display = 'none'; // Ensure the intro background and sections are hidden
         });
 
-        // Remove 'hidden' class from the selected section to display it
-        section.classList.remove('hidden');
+        // Remove 'display: none' from the selected section to make it visible
+        section.style.display = 'block'; // Show the selected section
 
         // Scroll to the selected section
         section.scrollIntoView({ behavior: 'smooth' });
