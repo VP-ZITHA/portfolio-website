@@ -7,9 +7,17 @@ buttons.forEach(button => {
         const target = button.getAttribute('data-target'); // Get the target section
         const section = document.getElementById(target);  // Find the section by its ID
 
-        // Hide the intro background and reveal the section
-        document.getElementById('intro-background').style.display = 'none'; // Hide the background color section
-        section.classList.remove('hidden');  // Reveal the selected section
+        // Hide the intro background and any other sections that might be visible
+        document.getElementById('intro-background').style.display = 'none'; // Hide the intro background section
+
+        // Hide all sections by adding the 'hidden' class
+        const allSections = document.querySelectorAll('section');
+        allSections.forEach(section => {
+            section.classList.add('hidden'); // Hide all sections
+        });
+
+        // Remove 'hidden' class from the clicked section to display it
+        section.classList.remove('hidden');
 
         // Scroll to the section
         section.scrollIntoView({ behavior: 'smooth' });
