@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: yellow;
-    color: #2c3e50;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
