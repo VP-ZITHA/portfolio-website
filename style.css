@@ -1,4 +1,8 @@
 /* Body and Layout */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -81,3 +85,7 @@ footer a:hover {
     color: #3498db;
 }
 
+<footer>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+    <p><a href="https://github.com/your-username" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/your-username" target="_blank">LinkedIn</a></p>
+</footer>
