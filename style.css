@@ -64,14 +64,14 @@ header nav ul li button:hover {
     font-weight: bold;
 }
 
-/* Typewriter Effect for Titles */
-.typewriter {
-    font-size: 36px;
+/* Typewriter Effect for Entire Section */
+.typewriter-section {
+    font-size: 24px;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid #3498db;
+    display: inline-block;
     width: 0;
-    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+    animation: typing 5s steps(100) forwards, blink 0.75s step-end infinite;
 }
 
 /* Keyframes for Typing Effect */
