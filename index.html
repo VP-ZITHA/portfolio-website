@@ -3,66 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <title>Your Portfolio</title>
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header Section -->
     <header>
         <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><button class="section-btn" data-target="about">About Me</button></li>
+                <li><button class="section-btn" data-target="skills">Skills</button></li>
+                <li><button class="section-btn" data-target="projects">Projects</button></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-    <h2 class="typewriter">About Me</h2>
-    <p>
-        Hi! I'm Vanessa Zitha, a passionate IT professional and developer. I specialize in web development and software engineering.
-        I love learning new technologies and solving problems creatively.
-    </p>
-    <p>
-        Outside of tech, I enjoy puzzles, playing video games(COD), gardening and traveling].
-    </p>
-</section>
-    
-  <section id="skills">
-        <h2 class="typewriter">Skills</h2>
-    <ul>
-        <li><strong>Programming Languages:</strong> Python, JavaScript, HTML, CSS, Java</li>
-        <li><strong>Frameworks & Libraries:</strong> React, Node.js, Django</li>
-        <li><strong>Tools & Technologies:</strong> Git, Docker, SQL, APIs</li>
-    </ul>
+    <!-- Intro Section with Background Color -->
+    <div id="intro-background" class="intro">
+        <p>Welcome to my portfolio!</p>
+    </div>
+
+    <!-- Sections that will be shown after clicking a button -->
+    <section id="about" class="hidden">
+        <h2 class="typewriter">About Me</h2>
+        <p>Hi! I'm Vanessa Zitha, a passionate IT professional and developer.</p>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <section id="skills" class="hidden">
+        <h2 class="typewriter">Skills</h2>
         <ul>
-            <li><a href="https://github.com/your-username/project-1">Project 1</a></li>
-            <li><a href="https://github.com/your-username/project-2">Project 2</a></li>
-            <!-- More projects coming soon! -->
+            <li><strong>Programming Languages:</strong> Python, JavaScript, HTML, CSS, Java</li>
+            <li><strong>Frameworks & Libraries:</strong> React, Node.js, Django</li>
         </ul>
     </section>
-    
-<section id="contact">
-    <h2>Contact</h2>
-    <p>You can reach me at:</p>
-    <ul>
-        <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/your-username" target="_blank">Your LinkedIn</a></li>
-        <li>GitHub: <a href="https://github.com/your-username" target="_blank">Your GitHub</a></li>
-    </ul>
-</section>
 
-<p id="demo"></p>
+    <section id="projects" class="hidden">
+        <h2 class="typewriter">Projects</h2>
+        <ul>
+            <li><a href="https://github.com/your-username/project1" target="_blank">Project 1</a></li>
+            <li><a href="https://github.com/your-username/project2" target="_blank">Project 2</a></li>
+        </ul>
+    </section>
 
-<script>
-const d = new Date();
-document.getElementById("demo").innerHTML = d;
-</script>
+    <!-- Link to the JavaScript File -->
+    <script src="script.js"></script>
 </body>
 </html>
