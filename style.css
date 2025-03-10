@@ -53,7 +53,7 @@ header nav ul li button:hover {
     display: block; /* Initially show the intro section */
     text-align: center;
     margin-top: 50px;
-    background-color: Gray; /* Background color for the intro section */
+    background-color: #f0f0e8; /* Background color for the intro section */
     color: white;
     padding: 100px 0;
 }
