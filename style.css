@@ -109,25 +109,25 @@ section {
 
 /* CONTACT SECTION CONTAINER */
 #contact {
-  max-width: 600px;
+  max-width: 480px;
   margin: 60px auto;
-  padding: 40px;
-  border-radius: 20px;
-  background: rgba(0, 128, 128, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 128, 128, 0.3);
-  box-shadow: 0 8px 24px rgba(0, 128, 128, 0.25);
+  padding: 35px 25px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 20px rgba(0, 128, 128, 0.25);
   color: #fff;
 }
 
 /* FORM HEADING */
 #contact h2 {
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   color: #ccf2f2;
-  margin-bottom: 30px;
-  text-shadow: 0 0 6px rgba(0, 128, 128, 0.5);
+  margin-bottom: 25px;
+  text-shadow: 0 0 6px rgba(0, 128, 128, 0.4);
 }
 
 /* FORM LAYOUT */
@@ -137,51 +137,31 @@ section {
   gap: 20px;
 }
 
-/* INDIVIDUAL ROWS (FOR INPUTS) */
-.form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-/* FOR LARGER SCREENS: SIDE-BY-SIDE FIELDS */
-@media (min-width: 600px) {
-  .form-row {
-    flex-direction: row;
-  }
-
-  .form-row input {
-    flex: 1;
-  }
-}
-
 /* FORM INPUTS & TEXTAREA */
-input, select, textarea {
-  background: rgba(0, 128, 128, 0.15);
+input, textarea {
+  background: rgba(255, 255, 255, 0.15);
   border: none;
   border-radius: 12px;
-  padding: 14px 18px;
-  font-size: 16px;
-  color: #ffffff;
+  padding: 12px 16px;
+  font-size: 15px;
+  color: #fff;
   width: 100%;
-  box-shadow: 0 4px 15px rgba(0, 128, 128, 0.1);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0, 128, 128, 0.08);
+  transition: all 0.3s ease;
 }
 
 input::placeholder,
-select::placeholder,
 textarea::placeholder {
-  color: #ccf2f2;
+  color: #e0f7f7;
   opacity: 1;
   font-weight: 400;
 }
 
 input:focus,
-select:focus,
 textarea:focus {
-  background: rgba(0, 128, 128, 0.25);
+  background: rgba(255, 255, 255, 0.25);
   outline: none;
-  box-shadow: 0 0 12px rgba(0, 128, 128, 0.6);
+  box-shadow: 0 0 12px rgba(0, 128, 128, 0.3);
 }
 
 /* SUBMIT BUTTON */
@@ -189,16 +169,16 @@ button[type="submit"] {
   background: #008080;
   border: none;
   padding: 14px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #ffffff;
-  border-radius: 12px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 18px rgba(0, 128, 128, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 128, 128, 0.4);
 }
 
 button[type="submit"]:hover {
   background: #006666;
-  box-shadow: 0 8px 24px rgba(0, 128, 128, 0.5);
+  box-shadow: 0 6px 18px rgba(0, 128, 128, 0.5);
 }
