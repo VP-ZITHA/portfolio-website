@@ -133,7 +133,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  opacity: 10;
+  opacity: 0;
   transform: translateY(20px);
 }
 
@@ -173,9 +173,11 @@ input, select, textarea {
 input::placeholder,
 select::placeholder,
 textarea::placeholder {
-  color: #e0e0e0;
-  opacity: 0.8;
+  color: #ffffff;
+  opacity: 1;
+  font-weight: 500;
 }
+
 
 input:focus,
 select:focus,
