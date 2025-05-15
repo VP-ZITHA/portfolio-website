@@ -10,6 +10,11 @@ buttons.forEach(button => {
             s.classList.add('hidden');
         });
 
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Message submitted! (Form handling not implemented)');
+});
+
         // Show selected section
         section.classList.remove('hidden');
 
