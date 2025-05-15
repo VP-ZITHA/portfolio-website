@@ -130,10 +130,11 @@ section {
 }
 
 #contact-form {
+  background-color: #998066;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  opacity: 0;
+  opacity: 10;
   transform: translateY(20px);
 }
 
