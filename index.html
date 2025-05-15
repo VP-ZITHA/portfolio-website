@@ -60,24 +60,15 @@
 <!-- Contact Me Section -->     
 <section id="contact" class="hidden">
   <h2>Contact Me</h2>
-  <form id="contact-form">
+  <form id="contact-form" class="animate">
     <div class="form-row">
       <input type="text" id="fname" name="firstname" placeholder="First Name" required>
       <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
     </div>
-    <div class="form-row">
-      <select id="country" name="country" required>
-        <option value="" disabled selected>Country</option>
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-    </div>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
     <button type="submit">Submit</button>
   </form>
 </section>
-
     <script src="script.js"></script>
 </body>
 </html>
