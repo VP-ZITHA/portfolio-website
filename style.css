@@ -108,16 +108,10 @@ section {
 }
 
 #contact {
-  max-width: 600px;
-  margin: 40px auto 80px auto;
-  padding: 40px 30px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  background: rgba(0, 128, 128, 0.2); /* Light teal with transparency */
+  border: 1px solid rgba(0, 128, 128, 0.4);
+  box-shadow: 0 8px 32px rgba(0, 128, 128, 0.3);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: #fff;
 }
 
 #contact h2 {
@@ -158,50 +152,36 @@ section {
   }
 }
 
-input, select, textarea {
-  background: rgba(255, 255, 255, 0.25);
-  border: none;
-  border-radius: 12px;
-  padding: 14px 18px;
-  font-size: 16px;
-  color: #fff;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
 input::placeholder,
 select::placeholder,
 textarea::placeholder {
-  color: #ffffff;
+  color: #ccf2f2;
   opacity: 1;
   font-weight: 500;
 }
 
+input, select, textarea {
+  background: rgba(0, 128, 128, 0.25);
+  border: none;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 128, 128, 0.2);
+}
 
 input:focus,
 select:focus,
 textarea:focus {
-  background: rgba(255, 255, 255, 0.35);
-  outline: none;
-  box-shadow: 0 0 12px #00bfa5;
+  background: rgba(0, 128, 128, 0.35);
+  box-shadow: 0 0 12px rgba(0, 128, 128, 0.8);
 }
 
 button[type="submit"] {
-  background: #00bfa5;
-  border: none;
-  padding: 14px 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 6px 15px rgba(0, 191, 165, 0.6);
+  background: #008080;
+  box-shadow: 0 6px 15px rgba(0, 128, 128, 0.6);
 }
 
 button[type="submit"]:hover {
-  background: #009e8f;
-  box-shadow: 0 8px 20px rgba(0, 158, 143, 0.8);
+  background: #006666;
+  box-shadow: 0 8px 20px rgba(0, 102, 102, 0.8);
 }
+
 
