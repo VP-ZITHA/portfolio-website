@@ -43,6 +43,10 @@ header nav ul li button:hover {
     background-color: #2980b9;
 }
 
+h2 {
+    text-align: center;
+}
+
 /* Hide the sections initially */
 .hidden {
     display: none;
