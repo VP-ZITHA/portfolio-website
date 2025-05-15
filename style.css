@@ -63,38 +63,25 @@ header nav ul li button:hover {
     font-weight: bold;
 }
 
-/* Typewriter Effect for Entire Section */
 .typewriter-section {
-    font-size: 24px;
-    white-space: nowrap;
     overflow: hidden;
-    display: inline-block;
-    width: 0;
-    animation: typing 5s steps(100) forwards, blink 0.75s step-end infinite;
+    border-right: .15em solid #3498db; /* cursor */
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
-/* Keyframes for Typing Effect */
+/* Typing animation: from width 0 to full */
 @keyframes typing {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
+    from { width: 0 }
+    to { width: 100% }
 }
 
-/* Keyframes for Cursor Blinking */
-@keyframes blink {
-    0%,
-    50%,
-    100% {
-        border-color: transparent;
-    }
-    25%,
-    75% {
-        border-color: #3498db;
-    }
+/* Cursor blink */
+@keyframes blink-caret {
+    0%, 50%, 100% { border-color: transparent; }
+    25%, 75% { border-color: #3498db; }
 }
+
 
 /* Smooth Scrolling */
 html {
