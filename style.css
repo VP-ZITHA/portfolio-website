@@ -5,6 +5,11 @@ body {
   margin: 0;
 }
 
+/* Set box-sizing globally */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* Header Section */
 header {
     text-align: center;
