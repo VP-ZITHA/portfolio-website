@@ -26,10 +26,11 @@
     <div id="intro-background" class="intro">
     </div>
 
-  <section id="about" class="hidden">
-  <h2><span class="typewriter-text">About Me</span></h2>
-  <p class="fade-in">Hi! I'm Vanessa Z, a passionate IT professional and developer.</p>
-</section>
+  <!-- About Me Section -->
+<section id="about" class="hidden">
+  <h2 class="typewriter-section">About Me</h2>
+  <p class="fade-in-paragraph">Hi! I'm Vanessa Z, a passionate IT professional and developer.</p>
+</section
 
     <!-- Skills Section -->
 <section id="skills" class="hidden">
@@ -56,17 +57,24 @@
     </div>
 </section>
     
-<!-- Contact Me Section -->    
+<!-- Contact Me Section -->     
 <section id="contact" class="hidden">
   <h2>Contact Me</h2>
   <form id="contact-form">
     <div class="form-row">
-      <input type="text" id="name" name="name" required placeholder="Your Name">
-      <input type="email" id="email" name="email" required placeholder="Your Email">
+      <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+      <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
     </div>
-    <input type="text" id="subject" name="subject" required placeholder="Subject">
-    <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
+    <div class="form-row">
+      <select id="country" name="country" required>
+        <option value="" disabled selected>Country</option>
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    </div>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+    <button type="submit">Submit</button>
   </form>
 </section>
 
