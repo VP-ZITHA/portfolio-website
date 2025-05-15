@@ -127,10 +127,6 @@ section {
     text-align: center;
 }
 
-/* Hide sections and intro background using this class */
-.hidden {
-    display: none !important; /* Force hide */
-}
 
 /* Flex layout for individual items inside the section */
 section > * {
