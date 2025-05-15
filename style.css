@@ -146,6 +146,21 @@ section {
   animation: fadeSlideUp 0.6s ease-out forwards;
 }
 
+label {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 6px;
+  display: block;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 /* Input Fields */
 input,
 textarea {
@@ -212,7 +227,7 @@ button[type="submit"]:hover {
 .form-row {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 
 @media (min-width: 600px) {
