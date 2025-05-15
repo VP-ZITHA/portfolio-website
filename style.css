@@ -63,24 +63,25 @@ header nav ul li button:hover {
     font-weight: bold;
 }
 
-.typewriter-section {
+.typewriter-text {
+    display: inline-block;
     overflow: hidden;
-    border-right: .15em solid #3498db; /* cursor */
     white-space: nowrap;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    border-right: 2px solid #3498db;
+    width: 0;
+    animation: typing 2s steps(30, end) forwards, blink-caret 0.7s step-end infinite;
 }
 
-/* Typing animation: from width 0 to full */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-/* Cursor blink */
 @keyframes blink-caret {
-    0%, 50%, 100% { border-color: transparent; }
-    25%, 75% { border-color: #3498db; }
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #3498db; }
 }
+
 
 
 /* Smooth Scrolling */
