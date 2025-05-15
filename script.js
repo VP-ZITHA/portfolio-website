@@ -13,14 +13,23 @@ buttons.forEach(button => {
         // Show selected section
         section.classList.remove('hidden');
 
-        // Reset the animation if the section is About
+        // Handle About section typewriter and fade-in
         if (target === 'about') {
             const typewriter = section.querySelector('.typewriter-text');
-            if (typewriter) {
-                typewriter.style.animation = 'none';
-                typewriter.offsetHeight; // Trigger reflow
-                typewriter.style.animation = '';
-            }
+            const paragraph = section.querySelector('.fade-in');
+
+            // Reset animations
+            typewriter.style.animation = 'none';
+            typewriter.offsetHeight; // Trigger reflow
+            typewriter.style.animation = '';
+            
+            // Hide paragraph initially
+            paragraph.classList.remove('visible');
+
+            // Wait for typewriter (2s) then fade in paragraph
+            setTimeout(() => {
+                paragraph.classList.add('visible');
+            }, 2000); // Match the typing duration
         }
 
         section.scrollIntoView({ behavior: 'smooth' });
