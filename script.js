@@ -1,37 +1,36 @@
 // Select all section buttons
 const buttons = document.querySelectorAll('.section-btn');
 
-// Loop through each button and add a click event listener
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        const target = button.getAttribute('data-target'); // Get the target section ID
-        const section = document.getElementById(target);  // Find the section by its ID
+        const target = button.getAttribute('data-target');
+        const section = document.getElementById(target);
 
-        // Hide the intro background and all other sections by adding the 'hidden' class
+        // Hide all sections and intro background by adding hidden class and style display none
         const allSections = document.querySelectorAll('section, #intro-background');
-        
-        // Hide all sections and intro background
         allSections.forEach(s => {
-            s.style.display = 'none'; // Ensure the intro background and sections are hidden
+            s.classList.add('hidden');
+            s.style.display = 'none';
         });
 
-        // Remove 'display: none' from the selected section to make it visible
-        section.style.display = 'block'; // Show the selected section
+        // Show the target section
+        section.classList.remove('hidden');
+        section.style.display = 'block';
 
-        // Apply typewriter effect to the entire section's content
-        const content = section.querySelectorAll('*'); // Select all elements in the section
+        // Apply typewriter effect
+        const content = section.querySelectorAll('*');
         content.forEach(element => {
-            element.classList.add('typewriter-section'); // Apply the typewriter effect to each element
+            element.classList.add('typewriter-section');
         });
 
-        // Scroll to the selected section
+        // Scroll smoothly
         section.scrollIntoView({ behavior: 'smooth' });
 
-        // Trigger the typewriter effect by resetting the animation for each element
+        // Restart animation for typewriter effect
         content.forEach(element => {
-            element.style.animation = 'none';  // Reset animation
-            element.offsetHeight;  // Trigger reflow to restart animation
-            element.style.animation = '';  // Reapply animation
+            element.style.animation = 'none';
+            element.offsetHeight;  // trigger reflow
+            element.style.animation = '';
         });
     });
 });
