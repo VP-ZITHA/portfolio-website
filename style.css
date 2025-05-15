@@ -23,6 +23,7 @@ header h1 {
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
@@ -37,14 +38,19 @@ header nav ul li button {
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 6px;
 }
 
 header nav ul li button:hover {
     background-color: #2980b9;
 }
 
-h2 { 
-    width: 100%; text-align: center; 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* horizontally center all children */
+    justify-content: center;  /* vertically center if desired */
+    text-align: center;
 }
 
 /* Hide the sections initially */
@@ -62,12 +68,7 @@ h2 {
     padding: 100px 0;
 }
 
-#intro-background p {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.typewriter-section {
+#about .typewriter-section {
   font-size: 32px;
   white-space: nowrap;
   overflow: hidden;
@@ -75,18 +76,16 @@ h2 {
   animation: typing 3s steps(30) forwards, blink 0.75s step-end infinite;
   margin: 0 auto 20px;
   width: max-content;
-  text-align: center;
 }
 
 /* Fade-in paragraph below heading */
-.fade-in-paragraph {
+#about .fade-in-paragraph {
   opacity: 0;
   animation: fadeIn 2s ease forwards;
   animation-delay: 3.1s; /* starts after typewriter ends */
   max-width: 600px;
   margin: 0 auto;
   font-size: 18px;
-  text-align: center;
   color: #333;
 }
 
@@ -106,46 +105,9 @@ h2 {
   to { opacity: 1; }
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
-.fade-in {
-    opacity: 0;
-    transition: opacity 1s ease-in;
-}
-
-.fade-in.visible {
-    opacity: 1;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;      /* horizontally center all children */
-    justify-content: center;  /* vertically center if desired */
-    text-align: center;
-}
-
-
-/* Flex layout for individual items inside the section */
-section > * {
-    flex: 1 1 45%; /* 2 items per row */
-    margin-bottom: 20px;
-}
-
-/* For tablets and up */
-@media (min-width: 768px) {
-    section > * {
-        flex: 1 1 30%; /* 3 items per row */
-    }
-}
-
-/* For desktops and up */
-@media (min-width: 1024px) {
-    section > * {
-        flex: 1 1 22%; /* 4 items per row */
-    }
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 #contact {
@@ -192,6 +154,7 @@ section > * {
   .form-row {
     flex-direction: row;
   }
+  
   .form-row input {
     flex: 1;
   }
@@ -204,7 +167,6 @@ input, select, textarea {
   padding: 14px 18px;
   font-size: 16px;
   color: #fff;
-  box-shadow: 0 4px 30px rgba(31, 38, 135, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -223,7 +185,6 @@ textarea:focus {
   background: rgba(255, 255, 255, 0.35);
   outline: none;
   box-shadow: 0 0 12px #00bfa5;
-  color: #fff;
 }
 
 button[type="submit"] {
@@ -244,14 +205,3 @@ button[type="submit"]:hover {
   box-shadow: 0 8px 20px rgba(0, 158, 143, 0.8);
 }
 
-/* Fade & slide up for form fields */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
