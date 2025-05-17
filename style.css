@@ -200,7 +200,7 @@ button[type="submit"] {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
-  border-radius: 12px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   box-shadow: 0 6px 15px rgba(0, 191, 165, 0.6);
