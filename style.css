@@ -117,7 +117,7 @@ section {
   max-width: 400px;
   margin: 40px auto;
   padding: 40px 30px;
-  background: rgba(232, 232, 232, 0.2); /* teal-tinted glass effect */
+  background: rgba(232, 232, 232, 0.8); /* teal-tinted glass effect */
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 128, 128, 0.3);
   backdrop-filter: blur(10px);
