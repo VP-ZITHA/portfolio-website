@@ -117,7 +117,7 @@ section {
   max-width: 400px;
   margin: 40px auto;
   padding: 40px 30px;
-  background: rgba(232, 232, 232); /
+  background: white; /
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 128, 128, 0.3);
   backdrop-filter: blur(10px);
