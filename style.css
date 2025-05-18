@@ -179,8 +179,7 @@ textarea {
 /* Placeholder Styling */
 input::placeholder,
 textarea::placeholder {
-  color: #e0f7f7;
-  opacity: 0.8;
+  color: white;
 }
 
 /* Focus Effect */
