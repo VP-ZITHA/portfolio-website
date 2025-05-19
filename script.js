@@ -40,6 +40,36 @@ buttons.forEach(button => {
         form.classList.add('animate');
       }
     }
+    // JavaScript to create bubbles
+const bubbleContainer = document.getElementById('bubbles-container');
+
+function createBubble() {
+  const bubble = document.createElement('div');
+  bubble.classList.add('bubble');
+
+  // Random horizontal position (0% to 100%)
+  bubble.style.left = `${Math.random() * 100}%`;
+
+  // Random size
+  const size = Math.random() * 40 + 10; // 10px to 50px
+  bubble.style.width = `${size}px`;
+  bubble.style.height = `${size}px`;
+
+  // Random animation duration & delay
+  bubble.style.animationDuration = `${6 + Math.random() * 6}s`;
+  bubble.style.animationDelay = `${Math.random() * 4}s`;
+
+  bubbleContainer.appendChild(bubble);
+
+  // Remove bubble when animation ends
+  bubble.addEventListener('animationend', () => {
+    bubble.remove();
+  });
+}
+
+// Create multiple bubbles
+setInterval(createBubble, 300);
+
   });
 });
 
