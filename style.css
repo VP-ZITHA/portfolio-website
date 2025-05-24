@@ -107,6 +107,20 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.project-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #3498db;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.project-item a:hover {
+  background: #2980b9;
+}
+
 /* Contact Form Container */
 #contact {
   max-width: 400px;
