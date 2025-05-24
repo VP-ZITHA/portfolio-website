@@ -8,40 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = button.getAttribute('data-target');
       const section = document.getElementById(target);
 
-      // Hide the intro and all other sections
+      // Hide all sections
       intro.classList.add('hidden');
       allSections.forEach(sec => sec.classList.add('hidden'));
 
-      // Show the selected section
+      // Show the selected one
       if (section) {
         section.classList.remove('hidden');
         section.scrollIntoView({ behavior: 'smooth' });
-
-        // Optional animation resets for "about" or "contact"
-        if (target === 'about') {
-          const typewriterElems = section.querySelectorAll('.typewriter-section');
-          typewriterElems.forEach(el => {
-            el.style.animation = 'none';
-            void el.offsetHeight;
-            el.style.animation = '';
-          });
-
-          const para = section.querySelector('.fade-in-paragraph');
-          if (para) {
-            para.style.animation = 'none';
-            void para.offsetHeight;
-            para.style.animation = '';
-          }
-        }
-
-        if (target === 'contact') {
-          const form = document.getElementById('contact-form');
-          if (form) {
-            form.classList.remove('animate');
-            void form.offsetWidth;
-            form.classList.add('animate');
-          }
-        }
       }
     });
   });
