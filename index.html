@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animated Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Bubbles Background -->
   <div id="bubbles-container"></div>
 
-  <!-- Header Navigation -->
   <header>
     <h1>My Portfolio</h1>
     <nav>
@@ -21,25 +19,22 @@
     </nav>
   </header>
 
-  <!-- Intro Section -->
   <section id="intro-background">
     <h2>Welcome to My Portfolio</h2>
-    <p>Loading magic...</p>
+    <p>This is the landing page</p>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="hidden">
-    <h2 class="typewriter-section">Hi, I'm a Web Developer</h2>
-    <p class="fade-in-paragraph">I specialize in building interactive, responsive web experiences.</p>
+    <h2 class="typewriter-section">About Me</h2>
+    <p class="fade-in-paragraph">I am a developer passionate about interactive designs and creative coding.</p>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="hidden">
     <h2>Contact Me</h2>
-    <form id="contact-form">
+    <form id="contact-form" class="animate">
       <div class="form-row">
-        <input type="text" id="fname" name="firstname" placeholder="First Name" required>
-        <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
       </div>
       <textarea placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Submit</button>
@@ -49,3 +44,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
