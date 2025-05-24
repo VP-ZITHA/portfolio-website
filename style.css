@@ -1,10 +1,3 @@
-/* General Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /* Body */
 body {
   font-family: 'Poppins', sans-serif;
@@ -58,7 +51,6 @@ header nav ul li button:hover {
 section {
   padding: 60px 20px;
   text-align: center;
-  display: none;
 }
 
 .section-btn.active {
