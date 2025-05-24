@@ -108,9 +108,10 @@ section {
 }
 
 .project-item a {
-  font-size: 20px;
+  font-size: 30px;
   color: white;
   text-decoration: none;
+  line-height: 1.6;
 }
 
 .project-item a:hover {
