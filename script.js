@@ -72,4 +72,33 @@ setInterval(createBubble, 300);
 
   });
 });
+<script>
+const bubbleContainer = document.getElementById('bubbles-container');
+
+function createBubble() {
+  const bubble = document.createElement('div');
+  bubble.classList.add('bubble');
+
+  // Random horizontal position (0% - 100%)
+  bubble.style.left = `${Math.random() * 100}%`;
+
+  // Random size (10px to 50px)
+  const size = Math.random() * 40 + 10;
+  bubble.style.width = `${size}px`;
+  bubble.style.height = `${size}px`;
+
+  // Random animation duration
+  bubble.style.animationDuration = `${6 + Math.random() * 4}s`;
+
+  bubbleContainer.appendChild(bubble);
+
+  // Remove after animation
+  bubble.addEventListener('animationend', () => {
+    bubble.remove();
+  });
+}
+
+// Create a new bubble every 300ms
+setInterval(createBubble, 300);
+</script>
 
