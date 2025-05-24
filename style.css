@@ -61,6 +61,11 @@ section {
   display: none;
 }
 
+.section-btn.active {
+  background-color: #1abc9c;
+}
+
+
 section h2 {
   font-size: 36px;
   margin-bottom: 20px;
