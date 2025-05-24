@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  function restartAnimation(el) {
+    el.style.animation = 'none';
+    void el.offsetHeight;
+    el.style.animation = '';
+  }
+
   // SECTION NAVIGATION
   const buttons = document.querySelectorAll('.section-btn');
 
@@ -9,28 +16,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Hide all sections
       document.querySelectorAll('section, #intro-background').forEach(s => {
-        s.style.display = 'none';
+        s.classList.add('hidden'); // Replace display:none with class
       });
+
+      // Remove active class from all buttons and set active on clicked
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
 
       // Show selected section
       if (section) {
-        section.style.display = 'block';
+        section.classList.remove('hidden');
         section.scrollIntoView({ behavior: 'smooth' });
 
         if (target === 'about') {
           const typewriterElems = section.querySelectorAll('.typewriter-section');
-          typewriterElems.forEach(elem => {
-            elem.style.animation = 'none';
-            elem.offsetHeight;
-            elem.style.animation = '';
-          });
+          typewriterElems.forEach(restartAnimation);
 
           const para = section.querySelector('.fade-in-paragraph');
-          if (para) {
-            para.style.animation = 'none';
-            para.offsetHeight;
-            para.style.animation = '';
-          }
+          if (para) restartAnimation(para);
         }
 
         else if (target === 'contact') {
@@ -49,6 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const bubbleContainer = document.getElementById('bubbles-container');
 
   function createBubble() {
+    if (bubbleContainer.childElementCount > 100) return;
+
     const bubble = document.createElement('div');
     bubble.classList.add('bubble');
 
