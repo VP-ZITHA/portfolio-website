@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
+  background: linear-gradient(to right, #f1faee, #a8dadc);
+  color: #1d3557;
   line-height: 1.6;
   overflow-x: hidden;
   padding: 0;
@@ -24,8 +24,9 @@ a:hover {
 
 /* Header */
 header {
-  background-color: #006666;
+  background-color: #457b9d;
   text-align: center;
+  color: #f1faee;
   padding: 40px 20px;
 }
 
@@ -50,8 +51,8 @@ header nav ul {
 
 header nav ul li button {
   padding: 10px 18px;
-  background-color: #3498db;
-  color: white;
+  background-color: #a8dadc;
+  color: #1d3557;
   border: none;
   border-radius: 8px;
   cursor: pointer;
