@@ -17,7 +17,6 @@
         <li><button class="section-btn" data-target="about">About</button></li>
         <li><button class="section-btn" data-target="skills">Skills</button></li>
         <li><button class="section-btn" data-target="projects">Projects</button></li>
-        <li><button class="section-btn" data-target="blog">Blog</button></li>
         <li><button class="section-btn" data-target="contact">Contact</button></li>
       </ul>
     </nav>
@@ -27,7 +26,20 @@
 
     <!-- Intro Section -->
     <section id="intro">
-      <p>Crafting creative, responsive, and modern websites.</p>
+      <h2>Intro</h2>
+    <div class="intro-container">
+    <div class="intro-preview" onclick="location.href='blog1.html'">
+      <h3>Why I Love Frontend Development</h3>
+      <p>A short dive into what makes the frontend so exciting...</p>
+      <span>Read more →</span>
+    </div>
+
+    <div class="intro-preview" onclick="location.href='blog2.html'">
+      <h3>CSS Tricks You Should Know</h3>
+      <p>Here are a few helpful and lesser-known CSS tips that boost productivity...</p>
+      <span>Read more →</span>
+    </div>
+  </div> 
     </section>
 
     <!-- About Section -->
@@ -63,23 +75,6 @@
         <div class="project-item"><a href="#">Project 4</a></div>
       </div>
     </section>
-
-  <section id="blog" class="hidden">
-    <h2>Blog</h2>
-    <div class="blog-container">
-    <div class="blog-preview" onclick="location.href='blog1.html'">
-      <h3>Why I Love Frontend Development</h3>
-      <p>A short dive into what makes the frontend so exciting...</p>
-      <span>Read more →</span>
-    </div>
-
-    <div class="blog-preview" onclick="location.href='blog2.html'">
-      <h3>CSS Tricks You Should Know</h3>
-      <p>Here are a few helpful and lesser-known CSS tips that boost productivity...</p>
-      <span>Read more →</span>
-    </div>
-  </div>
-</section>
 
     <!-- Contact Section -->
     <section id="contact" class="hidden">
