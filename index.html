@@ -3,87 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Your Name – Web Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Portfolio of Your Name – Web Developer skilled in HTML, CSS, JavaScript, React, and more.">
 </head>
 <body>
 
-  <!-- Header Navigation -->
   <header>
-    <h1>Welcome to My Portfolio</h1>
+    <h1>Vani</h1>
+    <p class="title">Web Developer</p>
     <nav>
       <ul>
         <li><button class="section-btn" data-target="about">About</button></li>
-        <li><button class="section-btn" data-target="contact">Contact</button></li>
         <li><button class="section-btn" data-target="skills">Skills</button></li>
         <li><button class="section-btn" data-target="projects">Projects</button></li>
+        <li><button class="section-btn" data-target="contact">Contact</button></li>
       </ul>
     </nav>
   </header>
 
-   <!-- Intro Section with Background Color -->
-    <div id="intro-background" class="intro">
-    </div>
+  <main>
 
-  <!-- About Section -->
-  <section id="about" class="hidden">
-    <h2 class="typewriter-section">About Me</h2>
-    <p class="fade-in-paragraph">
-      I am a developer passionate about interactive designs and creative coding.
-    </p>
-  </section>
+    <!-- Intro Section -->
+    <section id="intro">
+      <h2>Welcome to My Portfolio</h2>
+      <p>Crafting creative, responsive, and modern websites.</p>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="hidden">
-    <h2>Contact Me</h2>
-    <form id="contact-form" class="animate">
-      <div class="form-row">
-        <input type="text" placeholder="First Name" required>
-        <input type="text" placeholder="Last Name" required>
+    <!-- About Section -->
+    <section id="about" class="hidden">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" alt="avatar" class="avatar" />
+        <p>I’m a developer, passionate about building interactive digital experiences. I enjoy working with web technologies and continuously improving my craft.</p>
       </div>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="hidden">
-    <h2>Skills</h2>
-    <div class="skills-list">
-      <p>HTML, CSS, JavaScript, Python</p>
-    </div>
-    <div class="skills-list">
-      <p>React, Node.js, Express</p>
-    </div>
-    <div class="skills-list">
-      <p>Git, GitHub, SQL</p>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="hidden">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Git & GitHub</li>
+        <li>SQL</li>
+      </ul>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="hidden">
-    <h2>Projects</h2>
-    <div class="project-item">
-       <a href="https://yourproject1.com" target="_blank">Project 1</a>
-    </div>
-    <div class="project-item">
-       <a href="https://yourproject1.com" target="_blank">Project 2</a>
-    </div>
-    <div class="project-item">
-       <a href="https://yourproject1.com" target="_blank">Project 3</a>
-    </div>
-    <div class="project-item">
-       <a href="https://yourproject1.com" target="_blank">Project 4</a>
-    </div>
-    <div class="project-item">
-       <a href="https://yourproject1.com" target="_blank">Project 5</a>
-    </div>
-    <div class="project-item">
-       <a href="https://yourproject1.com" target="_blank">Project 6</a>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="hidden">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-item"><a href="#">Project 1</a></div>
+        <div class="project-item"><a href="#">Project 2</a></div>
+        <div class="project-item"><a href="#">Project 3</a></div>
+        <div class="project-item"><a href="#">Project 4</a></div>
+      </div>
+    </section>
 
-  <!-- JS -->
+    <!-- Contact Section -->
+    <section id="contact" class="hidden">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div class="form-row">
+          <input type="text" name="firstName" placeholder="First Name" required>
+          <input type="text" name="lastName" placeholder="Last Name" required>
+        </div>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vani. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
