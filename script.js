@@ -1,22 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.section-btn');
-  const allSections = document.querySelectorAll('section');
-  const intro = document.getElementById('intro-background');
+  const sections = document.querySelectorAll('main section');
+  const introSection = document.getElementById('intro');
+
+  function showSection(targetId) {
+    sections.forEach(section => {
+      section.classList.add('hidden');
+    });
+
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.classList.remove('hidden');
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   buttons.forEach(button => {
     button.addEventListener('click', () => {
-      const target = button.getAttribute('data-target');
-      const section = document.getElementById(target);
-
-      // Hide all sections
-      intro.classList.add('hidden');
-      allSections.forEach(sec => sec.classList.add('hidden'));
-
-      // Show the selected one
-      if (section) {
-        section.classList.remove('hidden');
-        section.scrollIntoView({ behavior: 'smooth' });
-      }
+      const targetId = button.getAttribute('data-target');
+      showSection(targetId);
     });
   });
+
+  // Show only intro at first
+  sections.forEach(section => {
+    if (section.id !== 'intro') {
+      section.classList.add('hidden');
+    }
+  });
 });
+
+ 
