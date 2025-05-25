@@ -107,14 +107,28 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 
+.project-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .project-item a {
   font-size: 30px;
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .project-item a:hover {
-  background: #2980b9;
+  color: hotpink;
 }
 
 /* Contact Form Container */
