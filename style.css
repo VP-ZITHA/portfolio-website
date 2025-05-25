@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #f5f5dc, #e0dcc8);
-  color: #311b92;
+  background: linear-gradient(to right, #f1f8e2, #c0df81);
+  color: #263409;
   line-height: 1.6;
   overflow-x: hidden;
   padding: 0;
@@ -24,8 +24,8 @@ a:hover {
 
 /* Header */
 header {
-  background-color: #5c4438;
-  color: white;
+  background-color: #59761e;
+  color: #f1f8e2;
   text-align: center;
   padding: 40px 20px;
 }
@@ -33,7 +33,7 @@ header {
 header h1 {
   font-size: 40px;
   margin-bottom: 8px;
-  color: #f5f5dc;
+  color: #f1f8e2;
 }
 
 header .title {
@@ -52,8 +52,8 @@ header nav ul {
 
 header nav ul li button {
   padding: 10px 18px;
-  background-color: #a67b5b;
-  color: white;
+  background-color: #98ca32;
+  color: #263409;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -62,7 +62,7 @@ header nav ul li button {
 }
 
 header nav ul li button:hover {
-  background-color:  #8f9779;
+  background-color: #c0df81;
 }
 
 /* Main Sections */
@@ -87,7 +87,7 @@ section {
 
 #intro p {
   font-size: 18px;
-  color: #e0dcc8;
+  color: #c0df81;
 }
 
 /* Typewriter Animation */
@@ -119,7 +119,7 @@ section {
   max-width: 600px;
   margin: auto;
   font-size: 18px;
-  color: #3e3e3e;
+  color: #263409;
 }
 
 @keyframes fadeIn {
@@ -154,7 +154,7 @@ section {
   padding: 12px 20px;
   border-radius: 10px;
   font-size: 18px;
-  color: #fff;
+  color: #263409;
 }
 
 /* Projects */
@@ -175,7 +175,7 @@ section {
 }
 
 .project-item a {
-  color: white;
+  color: #263409;
   font-weight: 500;
 }
 
@@ -230,11 +230,11 @@ section {
 #contact-form {
   max-width: 600px;
   margin: 0 auto;
-  background: #ffffff;
+  background: #f1f8e2;
+  box-shadow: 0 8px 24px rgba(38, 52, 9, 0.2);
   border-radius: 16px;
   padding: 40px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(92, 68, 56, 0.08);
 }
 
 .form-row {
@@ -244,9 +244,9 @@ section {
 }
 
 input, textarea {
-  background: #f5f5dc;
-  border: 1px solid #ccc;
-  color: #3e3e3e;
+  background: #ffffff;
+  border: 1px solid #98ca32;
+  color: #263409;
   border-radius: 12px;
   padding: 12px 16px;
   font-size: 15px;
@@ -255,7 +255,7 @@ input, textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #7a7a7a;
+  color: #59761e;
 }
 
 textarea {
@@ -266,7 +266,7 @@ button[type="submit"] {
   padding: 12px;
   border: none;
   border-radius: 8px;
-  background: #8f9779;
+  background: #98ca32;
   color: white;
   font-size: 18px;
   cursor: pointer;
@@ -275,7 +275,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background: #5c4438;
+  background: #59761e;
 }
 
 /* Footer */
